@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Doporuč kolegu a získej odměnu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f9fc;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0073e6;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header img {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    img.banner {
+      width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    form input, form select, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    form button {
+      background: #0073e6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://uploads-ssl.webflow.com/6543f63aef4a3d75c64f272a/65e9c8b35f8b63c98dcb1af3_bodlik_logo.png" alt="Bodlík">
+    <h1>Doporuč nového kolegu</h1>
+    <p>Získej až 15 000 Kč za doporučení!</p>
+  </header>
+  <main>
+    <img src="https://files.oaiusercontent.com/file-2eUDGJZiqKDVpgwzFfemDMUt?se=2024-06-15T17%3A14%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&sig=placeholder" alt="Referral Banner" class="banner">
+    <form action="https://formsubmit.co/nabor@sjednej.cz" method="POST">
+      <h3>Vaše údaje</h3>
+      <input type="text" name="Doporučitel - Jméno" placeholder="Vaše jméno" required>
+      <input type="email" name="Doporučitel - Email" placeholder="Váš e-mail" required>
+      <input type="text" name="Doporučitel - Telefon" placeholder="Telefon (nepovinné)">
+      <input type="text" name="Doporučitel - IČO" placeholder="IČO (pokud máte)">
+      <h3>Údaje o kandidátovi</h3>
+      <input type="text" name="Kandidát - Jméno" placeholder="Jméno kandidáta" required>
+      <input type="email" name="Kandidát - Email" placeholder="Email kandidáta" required>
+      <input type="text" name="Kandidát - Telefon" placeholder="Telefon kandidáta" required>
+      <select name="Kandidát - Má SŠ s maturitou?" required>
+        <option value="">Má SŠ s maturitou?</option>
+        <option value="Ano">Ano</option>
+        <option value="Ne">Ne</option>
+      </select>
+      <input type="text" name="Vztah ke kandidátovi" placeholder="Váš vztah ke kandidátovi" required>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Odeslat doporučení</button>
+    </form>
+  </main>
+</body>
+</html>
